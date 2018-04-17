@@ -10,16 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func btnleft(_ sender: Any) {
+        lbl.text = "Left Button pressed"
     }
-
-
+    @IBAction func btnright(_ sender: Any) {
+        lbl.text = "Right Button pressed"
+    }
+    
+    
 }
 
